@@ -13,7 +13,7 @@ final Product[] dummyProductList = [
 
 # A dummy service to list services offered by the bank.
 # bound to port `9090`.
-service /api/v1/product\-service on new http:Listener(9091) {
+service /api/v1/product\-service on new http:Listener(9089) {
 
     # A resource function to list products offered by the bank.
     # + return - Product list.
