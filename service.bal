@@ -1,4 +1,5 @@
 import ballerina/http;
+import ballerina/log;
 
 type Product record {
     string name;
@@ -19,6 +20,7 @@ service /product\-service on new http:Listener(9089) {
     # + return - Product list.
     resource function get products() returns @http:Cache {maxAge: 300} Product[] {
         
+        log:printInfo("Returning product list to the client.");
         return dummyProductList;
     }
 }
