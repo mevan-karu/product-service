@@ -7,9 +7,9 @@ type Product record {
 };
 
 final Product[] dummyProductList = [
-    {name: "Savings Account", interestRate: 4.5},
-    {name: "Fixed Deposit", interestRate: 9.5},
-    {name: "Personal Loan", interestRate: 12.0}
+    {name: "Money Saver Account", interestRate: 4.5},
+    {name: "Double Saver Account", interestRate: 5.0},
+    {name: "Super Saver Account", interestRate: 5.5}
 ];
 
 # A dummy service to list services offered by the bank.
